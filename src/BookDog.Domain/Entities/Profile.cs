@@ -1,6 +1,8 @@
+using BookDog.Domain.Shared;
+
 namespace BookDog.Domain.Entities
 {
-    public class Profile
+    public class Profile : BaseEntity
     {
         public string UserName { get; set; }
         public string? Bio { get; set; }

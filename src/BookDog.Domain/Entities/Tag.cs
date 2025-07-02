@@ -1,6 +1,8 @@
+using BookDog.Domain.Shared;
+
 namespace BookDog.Domain.Entities
 {
-    public class Tag
+    public class Tag : BaseEntity
     {
         public string Name { get; set; }
 

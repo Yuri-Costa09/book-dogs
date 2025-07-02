@@ -1,6 +1,8 @@
+using BookDog.Domain.Shared;
+
 namespace BookDog.Domain.Entities
 {
-    public class Book
+    public class Book : BaseEntity
     {
         public string Title { get; set; }
         public List<string> Authors { get; set; } = new List<string>();
