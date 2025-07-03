@@ -2,7 +2,7 @@ using BookDog.Domain.Entities;
 
 namespace BookDog.Application.Repositories
 {
-    interface ITagRepository
+    public interface ITagRepository
     {
         Task<Tag> GetTagById(Guid id);
         Task<Tag> GetTagByName(string name);

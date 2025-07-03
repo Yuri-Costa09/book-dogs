@@ -2,7 +2,7 @@ using BookDog.Domain.Entities;
 
 namespace BookDog.Application.Repositories
 {
-    interface IProfileRepository
+    public interface IProfileRepository
     {
         Task<Profile> GetProfileById(Guid id);
         Task<Profile> GetProfileByUserId(Guid userId);

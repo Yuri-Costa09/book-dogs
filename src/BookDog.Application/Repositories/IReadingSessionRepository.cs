@@ -2,7 +2,7 @@ using BookDog.Domain.Entities;
 
 namespace BookDog.Application.Repositories
 {
-    interface IReadingSessionRepository
+    public interface IReadingSessionRepository
     {
         Task<ReadingSession> GetReadingSessionById(Guid id);
         Task<List<ReadingSession>> GetAllReadingSessionsByBookSessionId(Guid bookSessionId);

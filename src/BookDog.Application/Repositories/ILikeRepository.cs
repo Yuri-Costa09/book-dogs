@@ -2,7 +2,7 @@ using BookDog.Domain.Entities;
 
 namespace BookDog.Application.Repositories
 {
-    interface ILikeRepository
+    public interface ILikeRepository
     {
         Task<Like> GetLikeById(Guid id);
         Task<List<Like>> GetLikesByBookSessionId(Guid bookSessionId);
