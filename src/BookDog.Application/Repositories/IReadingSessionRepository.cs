@@ -7,8 +7,8 @@ namespace BookDog.Application.Repositories
         Task<ReadingSession> GetReadingSessionById(Guid id);
         Task<List<ReadingSession>> GetAllReadingSessionsByBookSessionId(Guid bookSessionId);
         
-        void CreateReadingSession(ReadingSession readingSession);
-        void UpdateReadingSession(ReadingSession readingSession);
-        void DeleteReadingSession(Guid id);
+        Task CreateReadingSession(ReadingSession readingSession);
+        Task UpdateReadingSession(ReadingSession readingSession);
+        Task DeleteReadingSession(Guid id);
     }
 }

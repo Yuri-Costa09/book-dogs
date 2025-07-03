@@ -10,9 +10,9 @@ namespace BookDog.Application.Repositories
         Task<List<BookSession>> GetBookSessionsByTagName(string tagName);
         Task<List<BookSession>> GetAllBookSessions();
         
-        void CreateBookSession(BookSession bookSession);
-        void UpdateBookSession(BookSession bookSession);
-        void DeleteBookSession(Guid id);
+        Task CreateBookSession(BookSession bookSession);
+        Task UpdateBookSession(BookSession bookSession);
+        Task DeleteBookSession(Guid id);
         
     }
 }

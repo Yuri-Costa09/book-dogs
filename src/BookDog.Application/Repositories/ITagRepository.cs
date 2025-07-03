@@ -7,8 +7,8 @@ namespace BookDog.Application.Repositories
         Task<Tag> GetTagById(Guid id);
         Task<Tag> GetTagByName(string name);
         Task<List<Tag>> GetAllTags();
-        void CreateTag(Tag tag);
-        void UpdateTag(Tag tag);
-        void DeleteTag(Guid id);
+        Task CreateTag(Tag tag);
+        Task UpdateTag(Tag tag);
+        Task DeleteTag(Guid id);
     }
 }
