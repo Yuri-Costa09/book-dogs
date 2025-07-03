@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BookDog.Domain\BookDog.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

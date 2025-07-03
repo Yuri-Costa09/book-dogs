@@ -7,7 +7,7 @@ namespace BookDog.Domain.Entities
         public string Name { get; set; }
         public string Email { get; set; }
         public string PhoneNumber { get; set; }
-        public string PasswordHashedHashed { get; set; }
+        public string PasswordHashed { get; set; }
         public string Role { get; set; } = "User";
 
         public User(string name, string email, string phoneNumber, string passwordHashed)
@@ -15,7 +15,7 @@ namespace BookDog.Domain.Entities
             Name = name;
             Email = email;
             PhoneNumber = phoneNumber;
-            PasswordHashedHashed = passwordHashed;
+            PasswordHashed = passwordHashed;
         }
 
         //? RELATIONS
