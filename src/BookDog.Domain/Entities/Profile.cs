@@ -26,5 +26,7 @@ namespace BookDog.Domain.Entities
             LinkedIn = linkedin;
             Youtube = youtube;
         }
+        
+        public List<Like> Likes { get; set; } = new List<Like>();
     }
 }

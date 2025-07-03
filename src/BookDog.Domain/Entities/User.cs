@@ -18,9 +18,8 @@ namespace BookDog.Domain.Entities
             PasswordHashed = passwordHashed;
         }
 
-        //? RELATIONS
-        // 1. User has one Profile
-        // 2. User has many BookSessions
+        //! MANDATORY:
+        // When user registers, a profile is created for them 
         public Profile Profile { get; set; }
         public List<BookSession> BookSessions { get; set; } = new List<BookSession>();
     }
