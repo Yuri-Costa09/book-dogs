@@ -2,13 +2,13 @@ using BookDog.Domain.Entities;
 
 namespace BookDog.Application.Repositories
 {
-    public interface IReadingSessionRepository
+    interface IReadingSessionRepository
     {
-        public Task<ReadingSession> GetReadingSessionById(Guid id);
-        public Task<List<ReadingSession>> GetAllReadingSessionsByBookSessionId(Guid bookSessionId);
+        Task<ReadingSession> GetReadingSessionById(Guid id);
+        Task<List<ReadingSession>> GetAllReadingSessionsByBookSessionId(Guid bookSessionId);
         
-        public void CreateReadingSession(ReadingSession readingSession);
-        public void UpdateReadingSession(ReadingSession readingSession);
-        public void DeleteReadingSession(Guid id);
+        void CreateReadingSession(ReadingSession readingSession);
+        void UpdateReadingSession(ReadingSession readingSession);
+        void DeleteReadingSession(Guid id);
     }
 }

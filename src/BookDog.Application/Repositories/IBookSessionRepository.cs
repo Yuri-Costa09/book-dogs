@@ -2,17 +2,17 @@ using BookDog.Domain.Entities;
 
 namespace BookDog.Application.Repositories
 {
-    public interface IBookSessionRepository
+    interface IBookSessionRepository
     {
-        public Task<BookSession> GetBookSessionById(Guid id);
-        public Task<List<BookSession>> GetBookSessionsByUserId(Guid userId);
-        public Task<List<BookSession>> GetBookSessionsByBookName(string bookName);
-        public Task<List<BookSession>> GetBookSessionsByTagName(string tagName);
-        public Task<List<BookSession>> GetAllBookSessions();
+        Task<BookSession> GetBookSessionById(Guid id);
+        Task<List<BookSession>> GetBookSessionsByUserId(Guid userId);
+        Task<List<BookSession>> GetBookSessionsByBookName(string bookName);
+        Task<List<BookSession>> GetBookSessionsByTagName(string tagName);
+        Task<List<BookSession>> GetAllBookSessions();
         
-        public void CreateBookSession(BookSession bookSession);
-        public void UpdateBookSession(BookSession bookSession);
-        public void DeleteBookSession(Guid id);
+        void CreateBookSession(BookSession bookSession);
+        void UpdateBookSession(BookSession bookSession);
+        void DeleteBookSession(Guid id);
         
     }
 }

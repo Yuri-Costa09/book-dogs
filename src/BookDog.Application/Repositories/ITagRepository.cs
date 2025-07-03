@@ -2,13 +2,13 @@ using BookDog.Domain.Entities;
 
 namespace BookDog.Application.Repositories
 {
-    public interface ITagRepository
+    interface ITagRepository
     {
-        public Task<Tag> GetTagById(Guid id);
-        public Task<Tag> GetTagByName(string name);
-        public Task<List<Tag>> GetAllTags();
-        public void CreateTag(Tag tag);
-        public void UpdateTag(Tag tag);
-        public void DeleteTag(Guid id);
+        Task<Tag> GetTagById(Guid id);
+        Task<Tag> GetTagByName(string name);
+        Task<List<Tag>> GetAllTags();
+        void CreateTag(Tag tag);
+        void UpdateTag(Tag tag);
+        void DeleteTag(Guid id);
     }
 }

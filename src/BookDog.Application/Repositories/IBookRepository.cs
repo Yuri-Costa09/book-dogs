@@ -2,12 +2,12 @@ using BookDog.Domain.Entities;
 
 namespace BookDog.Application.Repositories
 {
-    public interface IBookRepository
+    interface IBookRepository
     {
-        public Task<Book> GetBookById(Guid id);
-        public Task<List<Book>> GetAllBooks();
-        public void CreateBook(Book book);
-        public void UpdateBook(Book book);
-        public void DeleteBook(Guid id);
+        Task<Book> GetBookById(Guid id);
+        Task<List<Book>> GetAllBooks();
+        void CreateBook(Book book);
+        void UpdateBook(Book book);
+        void DeleteBook(Guid id);
     }
 }
