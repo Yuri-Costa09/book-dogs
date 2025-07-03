@@ -1,4 +1,5 @@
 using BookDog.Domain.Shared;
+using BookDog.Domain.Extensions;
 
 namespace BookDog.Domain.Entities
 {
@@ -16,6 +17,16 @@ namespace BookDog.Domain.Entities
             Email = email;
             PhoneNumber = phoneNumber;
             PasswordHashed = passwordHashed;
+        }
+
+        public static User Create(string name, string email, string phoneNumber, string plainPassword)
+        {
+            name.ThrowIfNullOrEmpty(name);
+            email.ThrowIfEmailInvalid();
+            phoneNumber.ThrowIfNullOrEmpty(phoneNumber);
+            plainPassword.ThrowIfPasswordInvalid();
+            
+            return new User(name, email, phoneNumber, plainPassword);
         }
 
         //! MANDATORY:
