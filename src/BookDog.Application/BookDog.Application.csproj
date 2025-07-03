@@ -10,4 +10,8 @@
     <ProjectReference Include="..\BookDog.Domain\BookDog.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="features\" />
+  </ItemGroup>
+
 </Project>
